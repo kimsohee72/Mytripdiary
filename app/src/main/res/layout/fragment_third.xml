@@ -25,7 +25,7 @@
 
 
         <Button
-            android:id="@+id/seoul_buton"
+            android:id="@+id/seoul_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="서울"
@@ -37,7 +37,7 @@
             android:layout_marginTop="102dp"
             />
         <Button
-            android:id="@+id/ggd_buton"
+            android:id="@+id/ggd_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경기도"
@@ -49,7 +49,7 @@
             android:layout_marginTop="140dp"
             />
         <Button
-            android:id="@+id/gang_buton"
+            android:id="@+id/gang_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="강원도"
@@ -61,7 +61,7 @@
             android:layout_marginTop="100dp"
             />
         <Button
-            android:id="@+id/jen1_buton"
+            android:id="@+id/jen1_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전라북도"
@@ -73,7 +73,7 @@
             android:layout_marginTop="296dp"
             />
         <Button
-            android:id="@+id/jen2_buton"
+            android:id="@+id/jen2_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전라남도"
@@ -85,7 +85,7 @@
             android:layout_marginTop="380dp"
             />
         <Button
-            android:id="@+id/chung1_buton"
+            android:id="@+id/chung1_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="충청북도"
@@ -97,7 +97,7 @@
             android:layout_marginTop="160dp"
             />
         <Button
-            android:id="@+id/chung2_buton"
+            android:id="@+id/chung2_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="충청남도"
@@ -109,7 +109,7 @@
             android:layout_marginTop="210dp"
             />
         <Button
-            android:id="@+id/gyeng1_buton"
+            android:id="@+id/gyeng1_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경상북도"
@@ -121,7 +121,7 @@
             android:layout_marginTop="220dp"
             />
         <Button
-            android:id="@+id/gyeng2_buton"
+            android:id="@+id/gyeng2_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경상남도"
@@ -133,7 +133,7 @@
             android:layout_marginTop="330dp"
             />
         <Button
-            android:id="@+id/jeju_buton"
+            android:id="@+id/jeju_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="제주도"
