@@ -5,18 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".third">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="여행한 지역을 선택하세요!"
+        android:fontFamily="@font/air"
         android:textAlignment="center"
-        android:textSize="30dp">
+        android:textSize="20dp">
     </TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,6 +26,7 @@
 
         <Button
             android:id="@+id/seoul_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="서울"
@@ -38,6 +39,7 @@
             />
         <Button
             android:id="@+id/ggd_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경기도"
@@ -50,6 +52,7 @@
             />
         <Button
             android:id="@+id/gang_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="강원도"
@@ -62,6 +65,7 @@
             />
         <Button
             android:id="@+id/jen1_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전라북도"
@@ -74,6 +78,7 @@
             />
         <Button
             android:id="@+id/jen2_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="전라남도"
@@ -86,6 +91,7 @@
             />
         <Button
             android:id="@+id/chung1_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="충청북도"
@@ -98,6 +104,7 @@
             />
         <Button
             android:id="@+id/chung2_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="충청남도"
@@ -110,6 +117,7 @@
             />
         <Button
             android:id="@+id/gyeng1_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경상북도"
@@ -122,6 +130,7 @@
             />
         <Button
             android:id="@+id/gyeng2_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="경상남도"
@@ -134,6 +143,7 @@
             />
         <Button
             android:id="@+id/jeju_button"
+            android:fontFamily="@font/air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="제주도"

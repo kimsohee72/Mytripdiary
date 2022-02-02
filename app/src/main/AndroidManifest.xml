@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MynewApplication">
         <activity
+            android:name=".jeju"
+            android:exported="false" />
+        <activity
+            android:name=".gang"
+            android:exported="false" />
+        <activity
+            android:name=".ggd"
+            android:exported="false" />
+        <activity
+            android:name=".seoul"
+            android:exported="false" />
+        <activity
+            android:name=".seuol"
+            android:exported="false" />
+        <activity
+            android:name=".jenla1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

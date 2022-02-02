@@ -22,9 +22,6 @@
         tools:layout="@layout/fragment_second">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment"/>
     </fragment>
@@ -32,48 +29,58 @@
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="com.sohee.mynewapplication.third"
-        android:label="third_fragment_label"
+        android:label="@string/third_fragment_label"
         tools:layout="@layout/fragment_third">
         <action
-            android:id="@+id/action_ThirdFragment_to_seoulFragment"
-            app:destination="@id/seoulFragment"/>
+            android:id="@+id/action_ThirdFragment_to_seoulActivity"
+            app:destination="@id/seoulActivity"/>
         <action
-            android:id="@+id/action_ThirdFragment_to_ggdFragment"
-            app:destination="@id/ggdFragment"/>
+            android:id="@+id/action_ThirdFragment_to_ggdAcvivity"
+            app:destination="@id/ggdActivity"/>
         <action
-            android:id="@+id/action_ThirdFragment_to_gangFragment"
-            app:destination="@id/gangFragment"/>
+            android:id="@+id/action_ThirdFragment_to_gangActivity"
+            app:destination="@id/gangActivity"/>
         <action
-            android:id="@+id/action_ThirdFragment_to_jejuFragment"
-            app:destination="@id/jejuFragment"/>
+            android:id="@+id/action_ThirdFragment_to_jejuActivity"
+            app:destination="@id/jejuActivity"/>
+        <action
+            android:id="@+id/action_ThirdFragment_to_jenla1Activity"
+            app:destination="@id/jenla1Activity"/>
 
     </fragment>
-    <fragment
-        android:id="@+id/seoulFragment"
-        android:label="seoul_fragment_label"
+    <activity
+        android:id="@+id/seoulActivity"
+        android:label="@string/seoul_activity_label"
         android:name="com.sohee.mynewapplication.seoul"
-        tools:layout="@layout/fragment_seoul">
+        tools:layout="@layout/activity_seoul">
 
-    </fragment>
-    <fragment
-        android:id="@+id/ggdFragment"
-        android:label="ggd_fragment_label"
+    </activity>
+    <activity
+        android:id="@+id/ggdActivity"
+        android:label="@string/ggd_activity_label"
         android:name="com.sohee.mynewapplication.ggd"
-        tools:layout="@layout/fragment_ggd">
+        tools:layout="@layout/activity_ggd">
 
-    </fragment>
-    <fragment
-        android:id="@+id/gangFragment"
-        android:label="gang_fragment_label"
+    </activity>
+    <activity
+        android:id="@+id/gangActivity"
+        android:label="@string/gang_activity_label"
         android:name="com.sohee.mynewapplication.gang"
-        tools:layout="@layout/fragment_gang">
+        tools:layout="@layout/activity_gang">
 
-    </fragment>
-    <fragment
-        android:id="@+id/jejuFragment"
-        android:label="jeju_fragment_label"
+    </activity>
+    <activity
+        android:id="@+id/jejuActivity"
+        android:label="@string/jeju_activity_label"
         android:name="com.sohee.mynewapplication.jeju"
-        tools:layout="@layout/fragment_jeju">
+        tools:layout="@layout/activity_jeju">
 
-    </fragment>
+    </activity>
+    <activity
+        android:id="@+id/jenla1Activity"
+        android:label="Trip to 전라북도"
+        android:name="com.sohee.mynewapplication.jenla1"
+        tools:layout="@layout/activity_jenla1">
+
+    </activity>
 </navigation>

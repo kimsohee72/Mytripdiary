@@ -30,16 +30,19 @@ class third : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.seoulButton.setOnClickListener {
-            findNavController().navigate(R.id.action_ThirdFragment_to_seoulFragment)
+            findNavController().navigate(R.id.action_ThirdFragment_to_seoulActivity)
         }
         binding.ggdButton.setOnClickListener {
-            findNavController().navigate(R.id.action_ThirdFragment_to_ggdFragment)
+            findNavController().navigate(R.id.action_ThirdFragment_to_ggdAcvivity)
         }
         binding.gangButton.setOnClickListener {
-            findNavController().navigate(R.id.action_ThirdFragment_to_gangFragment)
+            findNavController().navigate(R.id.action_ThirdFragment_to_gangActivity)
         }
         binding.jejuButton.setOnClickListener {
-            findNavController().navigate(R.id.action_ThirdFragment_to_jejuFragment)
+            findNavController().navigate(R.id.action_ThirdFragment_to_jejuActivity)
+        }
+        binding.jen1Button.setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_jenla1Activity)
         }
     }
 

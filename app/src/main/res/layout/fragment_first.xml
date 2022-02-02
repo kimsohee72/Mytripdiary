@@ -8,16 +8,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp">
-
+        android:layout_height="100dp"
+        >
         <TextView
             android:id="@+id/textview_first"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Travel Diary"
+            android:text="나만의 여행일기 만들기"
+            android:textStyle="bold"
             android:textColor="#74a4c5"
-            android:textSize="28sp"
+            android:textSize="40sp"
+            android:fontFamily="@font/name"
             app:layout_constraintBottom_toTopOf="@id/button_first"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -38,10 +40,12 @@
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:background="#9891c1"
+        android:layout_gravity="center|bottom"
         android:text="Log in"
+        android:fontFamily="@font/air"
         android:visibility="visible"
+        android:textSize="20dp"
+        android:background="@drawable/shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
