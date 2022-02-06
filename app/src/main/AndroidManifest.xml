@@ -10,31 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MynewApplication">
         <activity
-            android:name=".jeju"
+            android:name=".activity.jeju"
             android:exported="false" />
         <activity
-            android:name=".gang"
+            android:name=".activity.ggd"
             android:exported="false" />
         <activity
-            android:name=".ggd"
+            android:name=".activity.seoul"
             android:exported="false" />
         <activity
-            android:name=".seoul"
+            android:name=".activity.jenla1"
             android:exported="false" />
+
+        <activity android:name=".dialog.UpdateActivity"/>
+        <activity android:name=".dialog.UpdateJeju"/>
+        <activity android:name=".dialog.UpdateGgd"/>
+
         <activity
-            android:name=".seuol"
-            android:exported="false" />
-        <activity
-            android:name=".jenla1"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MynewApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

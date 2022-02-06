@@ -51,36 +51,45 @@
     <activity
         android:id="@+id/seoulActivity"
         android:label="@string/seoul_activity_label"
-        android:name="com.sohee.mynewapplication.seoul"
+        android:name="com.sohee.mynewapplication.activity.seoul"
         tools:layout="@layout/activity_seoul">
 
     </activity>
     <activity
         android:id="@+id/ggdActivity"
         android:label="@string/ggd_activity_label"
-        android:name="com.sohee.mynewapplication.ggd"
+        android:name="com.sohee.mynewapplication.activity.ggd"
         tools:layout="@layout/activity_ggd">
 
     </activity>
     <activity
         android:id="@+id/gangActivity"
         android:label="@string/gang_activity_label"
-        android:name="com.sohee.mynewapplication.gang"
+        android:name="com.sohee.mynewapplication.activity.gang"
         tools:layout="@layout/activity_gang">
 
     </activity>
     <activity
         android:id="@+id/jejuActivity"
         android:label="@string/jeju_activity_label"
-        android:name="com.sohee.mynewapplication.jeju"
+        android:name="com.sohee.mynewapplication.activity.jeju"
         tools:layout="@layout/activity_jeju">
 
     </activity>
     <activity
         android:id="@+id/jenla1Activity"
         android:label="Trip to 전라북도"
-        android:name="com.sohee.mynewapplication.jenla1"
+        android:name="com.sohee.mynewapplication.activity.jenla1"
         tools:layout="@layout/activity_jenla1">
 
     </activity>
+    <fragment
+        android:id="@+id/diary_fragment"
+        android:label="Writing"
+        android:name="com.sohee.mynewapplication.diary"
+        tools:layout="@layout/note_item">
+        <action
+            android:id="@+id/action_note_to_seoulactivity"
+            app:destination="@id/seoulActivity"/>
+    </fragment>
 </navigation>
