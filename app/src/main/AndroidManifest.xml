@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.sohee.mynewapplication">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/travel_diary"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/travel_diary_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MynewApplication">
         <activity
@@ -21,10 +22,34 @@
         <activity
             android:name=".activity.jenla1"
             android:exported="false" />
-
-        <activity android:name=".dialog.UpdateActivity"/>
-        <activity android:name=".dialog.UpdateJeju"/>
-        <activity android:name=".dialog.UpdateGgd"/>
+        <activity
+            android:name=".activity.jenla2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chung1"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chung2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.gang"
+            android:exported="false" />
+        <activity
+            android:name=".activity.gyeng1"
+            android:exported="false" />
+        <activity
+            android:name=".activity.gyeng2"
+            android:exported="false" />
+        <activity android:name=".activity.Map_activity"/>
+        <activity android:name=".dialog.UpdateSeoul" />
+        <activity android:name=".dialog.UpdateJeju" />
+        <activity android:name=".dialog.UpdateGgd" />
+        <activity android:name=".dialog.UpdateChung1" />
+        <activity android:name=".dialog.UpdateChung2" />
+        <activity android:name=".dialog.UpdateJenla1" />
+        <activity android:name=".dialog.UpdateJenla2" />
+        <activity android:name=".dialog.UpdateGyeng1" />
+        <activity android:name=".dialog.UpdateGyeng2" />
 
         <activity
             android:name=".activity.MainActivity"
@@ -33,9 +58,12 @@
             android:theme="@style/Theme.MynewApplication.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

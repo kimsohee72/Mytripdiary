@@ -12,47 +12,30 @@
         tools:layout="@layout/fragment_first">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_FirstFragment_to_MapActivity"
+            app:destination="@id/MapActivity"/>
     </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.sohee.mynewapplication.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+    <activity
+        android:name="com.sohee.mynewapplication.activity.Map_activity"
+        android:id="@+id/MapActivity"
+        tools:layout="@layout/activity_map">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment"/>
-    </fragment>
+    </activity>
 
-    <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="com.sohee.mynewapplication.third"
-        android:label="@string/third_fragment_label"
-        tools:layout="@layout/fragment_third">
-        <action
-            android:id="@+id/action_ThirdFragment_to_seoulActivity"
-            app:destination="@id/seoulActivity"/>
-        <action
-            android:id="@+id/action_ThirdFragment_to_ggdAcvivity"
-            app:destination="@id/ggdActivity"/>
-        <action
-            android:id="@+id/action_ThirdFragment_to_gangActivity"
-            app:destination="@id/gangActivity"/>
-        <action
-            android:id="@+id/action_ThirdFragment_to_jejuActivity"
-            app:destination="@id/jejuActivity"/>
-        <action
-            android:id="@+id/action_ThirdFragment_to_jenla1Activity"
-            app:destination="@id/jenla1Activity"/>
 
-    </fragment>
     <activity
         android:id="@+id/seoulActivity"
         android:label="@string/seoul_activity_label"
         android:name="com.sohee.mynewapplication.activity.seoul"
         tools:layout="@layout/activity_seoul">
+
+    </activity>
+
+    <activity
+        android:id="@+id/gangActivity"
+        android:label="Trip to 강원도"
+        android:name="com.sohee.mynewapplication.activity.gang"
+        tools:layout="@layout/activity_gang">
 
     </activity>
     <activity
@@ -63,12 +46,17 @@
 
     </activity>
     <activity
-        android:id="@+id/gangActivity"
-        android:label="@string/gang_activity_label"
-        android:name="com.sohee.mynewapplication.activity.gang"
-        tools:layout="@layout/activity_gang">
+        android:id="@+id/chung1Activity"
+        android:label="Trip to 충청북도"
+        android:name="com.sohee.mynewapplication.activity.chung1"
+        tools:layout="@layout/activity_chung1">
 
     </activity>
+    <activity
+        android:name="com.sohee.mynewapplication.activity.chung2"
+        android:id="@+id/chung2Activity"
+        android:label="Trip to 충청남도"
+        tools:layout="@layout/activity_chung2"/>
     <activity
         android:id="@+id/jejuActivity"
         android:label="@string/jeju_activity_label"
@@ -83,13 +71,25 @@
         tools:layout="@layout/activity_jenla1">
 
     </activity>
-    <fragment
-        android:id="@+id/diary_fragment"
-        android:label="Writing"
-        android:name="com.sohee.mynewapplication.diary"
-        tools:layout="@layout/note_item">
-        <action
-            android:id="@+id/action_note_to_seoulactivity"
-            app:destination="@id/seoulActivity"/>
-    </fragment>
+    <activity
+        android:id="@+id/jenla2Activity"
+        android:label="Trip to 전라남도"
+        android:name="com.sohee.mynewapplication.activity.jenla2"
+        tools:layout="@layout/activity_jenla2">
+
+    </activity>
+    <activity
+        android:id="@+id/gyeng1Activity"
+        android:label="Trip to 경상북도"
+        android:name="com.sohee.mynewapplication.activity.gyeng1"
+        tools:layout="@layout/activity_gyeng1">
+
+    </activity>
+    <activity
+        android:id="@+id/gyeng2Activity"
+        android:label="Trip to 경상남도"
+        android:name="com.sohee.mynewapplication.activity.gyeng2"
+        tools:layout="@layout/activity_gyeng2">
+
+    </activity>
 </navigation>

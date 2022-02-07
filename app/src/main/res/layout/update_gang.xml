@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffe8e8"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:context=".dialog.UpdateGang">
+
+        <EditText
+            android:id="@+id/placeEditView"
+            android:layout_marginTop="20dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Place"
+            android:fontFamily="@font/air"
+            android:textColor="@color/black"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/feelingEditView"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Feeling"
+            android:scrollHorizontally="false"
+            android:fontFamily="@font/air"
+            android:textColor="@color/black"
+            android:inputType="none" />
+
+        <LinearLayout
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="수정"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/name"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/name"
+                android:text="취소"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_delete_24" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -11,27 +11,27 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.lifecycle.Observer
 import androidx.appcompat.widget.SearchView
-import com.sohee.mynewapplication.MyAdapter
 import com.sohee.mynewapplication.R
+import com.sohee.mynewapplication.SeoulAdapter
 import com.sohee.mynewapplication.databinding.ActivitySeoulBinding
 import com.sohee.mynewapplication.dialog.CustomDialog
-import com.sohee.mynewapplication.model.User
 import com.sohee.mynewapplication.dialog.CustomDialogInterface
-import com.sohee.mynewapplication.viewmodel.UserViewModel
+import com.sohee.mynewapplication.model.Seoul
+import com.sohee.mynewapplication.viewmodel.SeoulViewModel
 
 
 class seoul : AppCompatActivity(), CustomDialogInterface, SearchView.OnQueryTextListener {
 
     private lateinit var binding : ActivitySeoulBinding
-    private lateinit var userViewModel : UserViewModel
-    private val adapter: MyAdapter by lazy { MyAdapter() }
+    private lateinit var userViewModel : SeoulViewModel
+    private val adapter: SeoulAdapter by lazy { SeoulAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_seoul)
 
         // 뷰모델 연결
-        userViewModel = ViewModelProvider(this, UserViewModel.Factory(application)).get(UserViewModel::class.java)
+        userViewModel = ViewModelProvider(this, SeoulViewModel.Factory(application)).get(SeoulViewModel::class.java)
 
         // 아이템을 가로로 하나씩 보여줌
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
@@ -83,7 +83,7 @@ class seoul : AppCompatActivity(), CustomDialogInterface, SearchView.OnQueryText
 
     // 다이얼로그에서 추가버튼 클릭 됐을 때
     override fun onAddButtonClicked(place : String, feeling : String) {
-        val user = User(0,place,feeling)
+        val user = Seoul(0,place,feeling)
         userViewModel.addUser(user)
         Toast.makeText(this, "다녀온 곳 : $place , 감상 : $feeling 추가", Toast.LENGTH_SHORT).show()
     }

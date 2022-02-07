@@ -1,6 +1,7 @@
 package com.sohee.mynewapplication.activity
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -10,8 +11,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.sohee.mynewapplication.R
 import com.sohee.mynewapplication.databinding.ActivityMainBinding
-import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-
 
     }
 
