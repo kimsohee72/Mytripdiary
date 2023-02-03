@@ -1,4 +1,4 @@
-# MynewApplication
+# Mytripdiary
 
 <나만의 여행일기장 만들기>
 
